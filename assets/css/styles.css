@@ -1,0 +1,159 @@
+.intro-content {
+    position: relative;
+    top: -20rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content p {
+    word-spacing: 0.8rem;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.who-i-am {
+    max-width: 90rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: justify;
+}
+
+.grid-one-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3 {
+    font-size: 3rem;
+}
+.grid2 h3 {
+    font-size: 2rem;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 35rem;
+    max-height: 35rem;
+    overflow: hidden;
+}
+
+.project-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.project-img img:hover {
+    transform: translate(3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+}
+
+.heart {
+    color: red;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    .project-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .project-img img {
+        width: 100%;
+    }
+    .menu {
+        bottom: 0;
+        text-align: center;
+
+    }
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-content {
+        height: 100vh;
+    }
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+    .menu-spacing {
+        display: none;
+    }
+    .intro-content {
+        top: 0rem;
+    }
+
+}
