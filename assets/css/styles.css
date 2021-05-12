@@ -155,5 +155,13 @@
     .intro-content {
         top: 0rem;
     }
+    h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
 
 }
