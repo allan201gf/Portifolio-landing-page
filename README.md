@@ -2,7 +2,8 @@
 
 Projeto de portifólio em uma unica página responsiva feita em HTML e CSS
 
-Pendencias do projeto:
+Pendências do projeto:
 
 - Ajustar mobile (em alguns dispositivos a tela não está ajustando corretamente);
 - Inserir conteúdo real.
+
